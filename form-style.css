@@ -1,0 +1,69 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f7fc;
+  color: #111;
+  min-height: 100vh;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.site-header .brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.site-header nav a {
+  text-decoration: none;
+  color: #111;
+  margin-left: 25px;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.site-header nav a:hover {
+  color: #4CAF50;
+}
+
+/* Form Section */
+.form-section {
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+  position: relative;
+}
+
+.form-container {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.form-container h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #111;
+}
+
+/* For*
