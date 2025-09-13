@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sahil Kalra — Five Rivers</title>
+  <style>
+    :root{--bg:#0f1720;--text:#e6eef7;--muted:#9fb6cf;--accent:#6cc3ff}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;background:var(--bg);color:var(--text)}
+    header{position:fixed;top:0;left:0;right:0;padding:14px 28px;display:flex;justify-content:space-between;align-items:center;z-index:10;background:rgba(2,6,23,0.4)}
+    header a{color:var(--text);text-decoration:none;margin-left:18px}
+    .wrap{max-width:1100px;margin:110px auto;padding:24px}
+    .hero{display:flex;align-items:center;gap:40px;padding:40px;border-radius:12px}
+    .avatar{width:160px;height:160px;border-radius:50%;object-fit:cover;border:5px solid rgba(255,255,255,0.04);box-shadow:0 14px 30px rgba(0,0,0,0.6)}
+    h1{font-size:36px;margin:0}
+    p{color:var(--muted);max-width:700px}
+    .cta{display:inline-block;margin-top:12px;padding:10px 14px;border-radius:8px;background:var(--accent);color:#042033;text-decoration:none;font-weight:700}
+    footer{padding:40px;text-align:center;color:#8fa3b8}
+    @media(max-width:800px){ .hero{flex-direction:column;text-align:center} .avatar{width:140px;height:140px} }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="font-weight:700">Sahil Kalra</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="form.html">Customer Form</a>
+    </nav>
+  </header>
+
+  <div class="wrap">
+    <section class="hero">
+      <div>
+        <h1>Hi — I’m Sahil.</h1>
+        <p>I work with <strong>Five Rivers by Punjab Agro</strong>. I help businesses grow with e-commerce, digital marketing and automation. I build MIS and dashboards that save time and scale operations.</p>
+        <a class="cta" href="form.html">Open Customer Form</a>
+      </div>
+      <div>
+        <!-- Upload your photo to the repo under /images and update path below -->
+        <img class="avatar" src="images/yourphoto.jpg" alt="Sahil">
+      </div>
+    </section>
+
+    <section style="margin-top:30px;padding:22px;background:rgba(255,255,255,0.02);border-radius:12px">
+      <h3 style="margin:0 0 8px">What I Do</h3>
+      <p style="margin:0;color:var(--muted)">E-commerce operations, MIS & automation, digital marketing and dashboarding.</p>
+    </section>
+
+    <footer>
+      &copy; <span id="yr"></span> Sahil Kalra — Five Rivers by Punjab Agro
+    </footer>
+  </div>
+
+  <script>document.getElementById('yr').innerText = new Date().getFullYear();</script>
+</body>
+</html>
